@@ -38,13 +38,10 @@
         <div class="rounded-lg overflow-hidden bg-white md:flex w-[85vw] sm:max-w-[575px] md:[&>div]:w-1/2">
             <!-- IMAGE CARD -->
             <div>
-                <img
-                    class="h-full w-full object-cover"
-                    srcset="./images/image-product-mobile.jpg 400w, ./images/image-product-desktop.jpg 800w"
-                    sizes="(min-width: 768px) 800w"
-                    src="./images/image-product-mobile.jpg"
-                    alt="product"
-                />
+                <picture  class="h-full w-full object-cover">
+                  <source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg"> 
+                 <img src="./images/image-product-mobile.jpg" alt="produce">
+                </picture>
             </div>
             <!-- INFO CARD -->
             <div class="p-5 md:p-7 md:flex md:flex-col md:justify-between">
